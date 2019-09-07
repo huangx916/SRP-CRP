@@ -1,4 +1,4 @@
-﻿Shader "CustomRP/DeferredLighting"
+﻿Shader "CustomRP/Deferred/DeferredLighting"
 {
     Properties
     {
