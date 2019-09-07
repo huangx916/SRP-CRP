@@ -317,7 +317,8 @@ MonoBehaviour:
   - {fileID: 1335118603}
   cubeMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   pureColorMaterial: {fileID: 2100000, guid: aa4d1cf5f1dec4db2a6e1b9bb733b9f6, type: 2}
-  skyboxMaterial: {fileID: 2100000, guid: 2462349ae2f7f45d49c5572d69474913, type: 2}
+  skybox:
+    skyboxMaterial: {fileID: 2100000, guid: 2462349ae2f7f45d49c5572d69474913, type: 2}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
