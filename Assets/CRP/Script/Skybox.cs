@@ -8,6 +8,7 @@ public struct Skybox
     public Material skyboxMaterial;
     private static Mesh m_mesh;
     private static Vector4[] corners = new Vector4[4];
+    private static int _Corner = Shader.PropertyToID("_Corner");
 
     public static Mesh fullScreenMesh
     {
@@ -44,7 +45,7 @@ public struct Skybox
         corners[1] = cam.ViewportToWorldPoint(new Vector3(1, 0, cam.farClipPlane));
         corners[2] = cam.ViewportToWorldPoint(new Vector3(0, 1, cam.farClipPlane));
         corners[3] = cam.ViewportToWorldPoint(new Vector3(1, 1, cam.farClipPlane));
-        skyboxMaterial.SetVectorArray("_Corner", corners);
+        skyboxMaterial.SetVectorArray(_Corner, corners);
         skyboxMaterial.SetPass(0);
         Graphics.DrawMeshNow(fullScreenMesh, Matrix4x4.identity);
     }
