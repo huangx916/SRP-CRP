@@ -319,7 +319,7 @@ MonoBehaviour:
   skybox:
     skyboxMaterial: {fileID: 2100000, guid: 2462349ae2f7f45d49c5572d69474913, type: 2}
   deferredLighting:
-    deferredMaterial: {fileID: 0}
+    deferredMaterial: {fileID: 2100000, guid: a9fb722b75e584c20afa283cf6657d57, type: 2}
     directionalLight: {fileID: 1618787076}
 --- !u!114 &963194230
 MonoBehaviour:
